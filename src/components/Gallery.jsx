@@ -58,7 +58,7 @@ const gallery = images.map((image, index)=> {
   return (
     <div key={index} className="imageBox">
       <img src={image} alt="coffee"/>
-      <button onClick={()=>handleClick(image, index)}><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button onClick={()=>handleClick(image, index)}><i className="fa-solid fa-magnifying-glass"></i></button>
     </div>
   )
 })
