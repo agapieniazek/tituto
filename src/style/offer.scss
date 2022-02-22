@@ -33,3 +33,27 @@
   }
 
 }
+@media (max-width: 768px){
+  .offer{
+    width: 100vw;
+    height: auto;
+    &__title{
+      margin-top: 18%;
+      font-size: 1.8rem;
+    }
+    &__list{
+      flex-direction: column;
+      &__item{
+        width: 100vw;
+        margin-bottom: 6%;
+        height: auto;
+        img{
+          width: 100vw;
+        }
+        h3{
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
