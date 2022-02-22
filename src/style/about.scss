@@ -1,0 +1,23 @@
+@import "variables";
+
+.about{
+  width: 85%;
+  margin: 6% auto;
+  overflow: hidden;
+  display: flex;
+  & img{
+    width: 50%;
+    margin-right: 10%;
+  }
+  &__info{
+    & h2{
+      margin-top: 20%;
+      color: $maincolor;
+    }
+    & p{
+      margin-top: 5%;
+      color: grey;
+      letter-spacing: 1px;
+    }
+  }
+}
