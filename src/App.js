@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Offer from "./components/Offer";
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <About/>
       <Offer/>
+      <Gallery/>
       <Footer/>
     </div>
   );

@@ -1,0 +1,89 @@
+@import "variables";
+
+.gallery{
+  width: 90vw;
+  margin: 20px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2{
+    color: $maincolor;
+  }
+}
+.galleryBox{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.imageBox {
+  flex: 1;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+
+  & img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  & button{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    background-color: inherit;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+
+//MODAL
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  &__arrows{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    &__left{
+      left: 15px;
+    }
+    &__right{
+      right: 15px;
+    }
+  }
+  &__img{
+    width: 50%;
+    object-fit: cover;
+  }
+  &__close{
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-top: -40%;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+@media (max-width:576px){
+  .overlay{
+   position:fixed;
+  }
+}

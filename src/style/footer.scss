@@ -1,0 +1,38 @@
+@import "variables";
+
+.footer{
+  width: 90vw;
+  margin: 80px auto;
+  & h2{
+    width: 100%;
+    color: $maincolor;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  &__element{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    & p{
+      margin-left: 20px;
+      letter-spacing: 1px;
+    }
+  }
+}
+.contactBox{
+  width: 40%;
+}
+.map{
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
